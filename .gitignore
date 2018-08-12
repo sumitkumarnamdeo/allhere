@@ -38,6 +38,7 @@ atlassian*
 /error-allhere.com.log
 /.htaccess
 /gitsetup
+/app/etc/config.php
 
 /pub/media/*.*
 !/pub/media/.htaccess
