@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--<move element="header.panel.wrapper" destination="header.container" before="-"/>-->
+        <!--<move element="top.search" destination="header.panel.wrapper" after="-" />-->
+         <referenceBlock name="header.panel">
+            <block class="Magento\Cms\Block\Block" name="social.link" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">top_social_links</argument>
+                </arguments>
+            </block>
+            
+<!--            <block class="Magento\Framework\View\Element\Html\Link" name="aboutus.link" before="-">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="false">about Us</argument>
+                    <argument name="path" xsi:type="string" translate="false">about-us</argument>
+                </arguments>
+            </block>-->
+
+        <!--<referenceBlock name="register-link" remove="true" />
+            <referenceBlock name="authorization-link" remove="true" />
+            <referenceBlock name="wish-list-link" remove="true" />
+            <referenceBlock name="my-account-link" remove="true" />-->
+
+        </referenceBlock>
+    </body>
+</page>
