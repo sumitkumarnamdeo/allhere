@@ -45,3 +45,142 @@ and open the template in the editor.
 .fa-dribbble:before {
     content: "\f17d";
 }
+.minicart-wrapper {
+    margin-left: 13px;
+    margin-top: 9px;
+}
+/*.product-item-inner-listing {
+    padding-top: 23px;
+}
+.products-grid .product-item-info:hover, .products-grid .product-item-info.active {
+    background: #f7e7e7;
+    box-shadow: none;
+    border: none;
+}
+.page-products .products-grid .product-item {
+    margin-left: 0;
+    margin: 0px auto;
+    text-align: center;
+}
+*/
+.page-header .panel.wrapper {
+     background-color: #fff;
+}
+ul.header.links, li a {
+    color: #000;
+}
+.header.panel > .header.links > li > a {
+    color: #000;
+}
+.page-header .switcher strong, .page-footer .switcher strong {
+    color: #000;
+}
+.page-header .switcher .options .action.toggle:after, .page-footer .switcher .options .action.toggle:after {
+    color: #000;
+}
+header .wrapper {
+    height: auto;
+}
+.wrapper {
+    width: auto;
+}
+.nav-sections {
+    margin-bottom: 25px;
+    min-height: 30px;
+    line-height: 30px;
+    margin: 0 0 10px;
+    border-top: 1px solid #e8e8e8;
+}
+.nav-sections {
+    background: none;
+}
+.navigation {
+        background: none 
+ }
+.product-item .tocart {
+   border: none;
+    background: #353535;
+    border: 2px solid #353535;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+    padding: 9px 14px;
+    -webkit-appearance: none;    
+    -webkit-border-radius: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;   
+}
+.action.primary:hover {
+    background: #fff;
+    border: 2px solid #231f20;
+    font-weight: 400;
+    font-size: 12px;
+    color: #231f20;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+    padding: 9px 14px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.product-item .price-box .price {
+    font-weight: 700;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.page-products .products-grid .product-item {
+     text-align: center;
+}
+.products-grid .product-item-info:hover, .products-grid .product-item-info.active {
+     background: none;
+     box-shadow: none;
+     border: none;
+     margin: 0px;
+     padding: 0px;
+     position: relative;
+     z-index: 2; 
+}
+.page-products .product-item-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pro-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.pro-options .swatch-attribute-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter-options-title {
+    background: none;
+    border-bottom: 1px dotted #d0d0d0;
+    color: inherit;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+.filter-options-title:after {
+    top: 2px;
+}

@@ -9,25 +9,20 @@
     <body>
         <!--<move element="header.panel.wrapper" destination="header.container" before="-"/>-->
         <!--<move element="top.search" destination="header.panel.wrapper" after="-" />-->
-         <referenceBlock name="header.panel">
+        <referenceBlock name="header.panel">
             <block class="Magento\Cms\Block\Block" name="social.link" before="-">
                 <arguments>
                     <argument name="block_id" xsi:type="string">top_social_links</argument>
                 </arguments>
             </block>
-            
-<!--            <block class="Magento\Framework\View\Element\Html\Link" name="aboutus.link" before="-">
-                <arguments>
-                    <argument name="label" xsi:type="string" translate="false">about Us</argument>
-                    <argument name="path" xsi:type="string" translate="false">about-us</argument>
-                </arguments>
-            </block>-->
-
-        <!--<referenceBlock name="register-link" remove="true" />
-            <referenceBlock name="authorization-link" remove="true" />
-            <referenceBlock name="wish-list-link" remove="true" />
-            <referenceBlock name="my-account-link" remove="true" />-->
-
         </referenceBlock>
+
+        <!-- <move element="top.search" destination="navigation.sections" after="-" /> -->
+        <move element="minicart" destination="catalog.topnav" after="-" />
+
+        <referenceBlock name="reviews.tab" remove="true" />
+        <referenceBlock name="product.review.form" remove="true" />
+        <referenceBlock name="product.info.review" remove="true" />
+
     </body>
 </page>
