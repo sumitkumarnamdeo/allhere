@@ -9,20 +9,87 @@
     <body>
         <!--<move element="header.panel.wrapper" destination="header.container" before="-"/>-->
         <!--<move element="top.search" destination="header.panel.wrapper" after="-" />-->
-        <referenceBlock name="header.panel">
-            <block class="Magento\Cms\Block\Block" name="social.link" before="-">
+        <!-- <referenceBlock name="header.panel">
+            <block class="Magento\Cms\Block\Block" name="social.link" after="-">
                 <arguments>
                     <argument name="block_id" xsi:type="string">top_social_links</argument>
                 </arguments>
             </block>
-        </referenceBlock>
+        </referenceBlock> -->
 
         <!-- <move element="top.search" destination="navigation.sections" after="-" /> -->
-        <move element="minicart" destination="catalog.topnav" after="-" />
+        <!-- <move element="minicart" destination="catalog.topnav" after="-" /> -->
 
-        <referenceBlock name="reviews.tab" remove="true" />
+<!--         <referenceBlock name="reviews.tab" remove="true" />
         <referenceBlock name="product.review.form" remove="true" />
         <referenceBlock name="product.info.review" remove="true" />
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+
+        <referenceBlock name="privacy-policy-link" remove="true"/>
+        <referenceBlock name="search-term-popular-link" remove="true"/>
+        <referenceBlock name="catalog-search-advanced-link" remove="true"/>
+        <referenceBlock name="sales-guest-form-link" remove="true"/>
+        <referenceBlock name="product.info.social" remove="true" /> -->
+
+
+        <move element="header.panel.wrapper" destination="page.wrapper" before="header.container"/>
+        <referenceBlock name="store_language" remove="true"/>
+
+        <move element="top.search" destination="header.panel.wrapper" before="user-account"/>
+      
+        <referenceBlock name="advanced-search-link" remove="true"/>
+
+        <container name="header.panel.wrapper" htmlClass="agileits_header fixed" htmlTag="div" before="-">
+        </container>
+
+
+            <referenceBlock name="authorization-link-login" remove="true"/>
+            <referenceBlock name="register-link" remove="true" />
+            <referenceBlock name="authorization-link" remove="true" />
+            <referenceBlock name="wish-list-link" remove="true" />
+            <referenceBlock name="my-account-link" remove="true" />
+            <referenceBlock name="header" remove="true"/>
+            <referenceBlock name="header.panel" remove="true"/>
+            <referenceBlock name="compare-link-wrapper" remove="true"/>
+
+            <!-- <container name="custom-content" as="custom-content" label="Page Custom
+                Content" htmlTag="div" htmlClass="custom-content">
+                <block class="Magento\Framework\View\Element\Template"
+                name="custom-content" template="Magento_Theme::html/custom-content.phtml" />
+            </container> -->
+
+            <referenceContainer name="header.panel.wrapper">
+                <container name="special.offers" as="special.offers" label="special offers" htmlTag="div" htmlClass="w3l_offers">
+                    <block class="Magento\Framework\View\Element\Template" name="special-offers-link" template="Magento_Theme::html/special-offers.phtml" before="top.search" />
+                </container>
+                <container name="user-account" as="user-account" label="User Contact Links" htmlTag="div" htmlClass="w3l_header_right">
+                    <block class="Magento\Framework\View\Element\Template" name="account-link" template="Magento_Theme::html/user-account-links.phtml" before="user-contact" />
+                </container>
+                <container name="user-contact" as="user-contact" label="Contact Links" htmlTag="div" htmlClass="w3l_header_right1">
+                    <block class="Magento\Framework\View\Element\Template" name="contact-link" template="Magento_Theme::html/contact.phtml" after="user-account" />
+                </container>
+            </referenceContainer>
+
+
+            <move element="minicart" destination="header.panel.wrapper" after="top.search" />
+
+            <referenceContainer name="header-wrapper" label="Page Header" htmlTag="div" htmlClass="container">
+              <!--   <block class="Magento\Theme\Block\Html\Header\Logo" name="logo">
+                    <arguments>
+                        <argument name="logo_img_width" xsi:type="number">189</argument>
+                        <argument name="logo_img_height" xsi:type="number">64</argument>
+                    </arguments>
+                </block> -->
+
+                 <container name="middle.nav" as="middle.nav" label="Middle Nav" htmlTag="div" htmlClass="w3ls_logo_products_left1">
+                        <block class="Magento\Framework\View\Element\Template" name="middle-nav-links" template="Magento_Theme::html/middle-nav.phtml" after="logo"  />
+                 </container>
+
+                 <container name="middle.call" as="middle.call" label="Middle Call" htmlTag="div" htmlClass="w3ls_logo_products_left1">
+                        <block class="Magento\Framework\View\Element\Template" name="middle-call-links" template="Magento_Theme::html/middle-call.phtml" after="logo"  />
+                 </container>
+
+            </referenceContainer>
 
     </body>
 </page>

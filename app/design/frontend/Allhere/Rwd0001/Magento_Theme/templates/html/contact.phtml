@@ -1,0 +1,9 @@
+<?php
+	$url  = $this->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]);
+
+	$contact_url = $block->getUrl('contact', array('referer' => base64_encode($url)));
+?>
+
+<div class="w3l_header_right1">
+<h2><a href="<?php echo $contact_url; ?>">Contact Us</a></h2>
+</div>

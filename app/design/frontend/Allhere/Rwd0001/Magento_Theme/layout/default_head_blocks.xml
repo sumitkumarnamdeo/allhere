@@ -1,9 +1,12 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-    	<css src="css/layout.css" />
-    	<css src="css/default.css" />
+    	<css src="css/bootstrap.css" />
+		<css src="css/style.css" />
+		<css src="css/font-awesome.css" /> 
         <css src="css/custom-m.css" />
         <css src="css/custom-l.css" media="screen and (min-width: 768px)"/>
-        <css src="css/font-awesome.min.css" />
+
+        <link src="js/custom.js" />
+        <!-- <link src="js/sample.js"/> -->
     </head>
 </page>

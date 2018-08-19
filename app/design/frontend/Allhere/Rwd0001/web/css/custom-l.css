@@ -8,179 +8,41 @@ and open the template in the editor.
     Author     : hadoop
 */
 
-.panel .header .top_social_bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    float:left;
+
+.w3l_search input[type="text"] {
+ 	height: auto;
 }
-.panel .header .top_social_bar > a {
-    font-size: 12px;
-    color: #232d37;
-    margin-right: 30px;
+.w3l_search button {
+    outline: none;
+    padding: 10px 29px 31px;
+    width: 15%;
+    border: 1px solid;
+    position: relative;
+    background: url(../images/img-sp.png) no-repeat 14px 5px #FA1818;
 }
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
+.agileits_header .panel.header {
+   padding: 0px;
 }
-.fa-facebook-f:before, .fa-facebook:before {
-    content: "\f09a";
-}
-.fa-twitter:before {
-    content: "\f099";
-}
-.fa-linkedin:before {
-    content: "\f0e1";
-}
-.fa-skype:before {
-    content: "\f17e";
-}
-.fa-dribbble:before {
-    content: "\f17d";
-}
-.minicart-wrapper {
-    margin-left: 13px;
-    margin-top: 9px;
-}
-/*.product-item-inner-listing {
-    padding-top: 23px;
-}
-.products-grid .product-item-info:hover, .products-grid .product-item-info.active {
-    background: #f7e7e7;
+
+.agileits_header .panel {
+    margin-bottom: 0px;
+    background-color: #000;
+    border: none
+    border-radius: none;
     box-shadow: none;
-    border: none;
 }
-.page-products .products-grid .product-item {
-    margin-left: 0;
-    margin: 0px auto;
-    text-align: center;
+.product_list_header {
+    margin-left: 7em !important;
+    margin-top: 6px;
 }
-*/
-.page-header .panel.wrapper {
-     background-color: #fff;
+.agileits_header.fixed {
+    height: 46.19px;
 }
-ul.header.links, li a {
-    color: #000;
+
+.w3ls_logo_products_left1:nth-child(3) {
+     margin-left: 0px; 
 }
-.header.panel > .header.links > li > a {
-    color: #000;
-}
-.page-header .switcher strong, .page-footer .switcher strong {
-    color: #000;
-}
-.page-header .switcher .options .action.toggle:after, .page-footer .switcher .options .action.toggle:after {
-    color: #000;
-}
-header .wrapper {
-    height: auto;
-}
-.wrapper {
-    width: auto;
-}
-.nav-sections {
-    margin-bottom: 25px;
-    min-height: 30px;
-    line-height: 30px;
-    margin: 0 0 10px;
-    border-top: 1px solid #e8e8e8;
-}
-.nav-sections {
-    background: none;
-}
-.navigation {
-        background: none 
- }
-.product-item .tocart {
-   border: none;
-    background: #353535;
-    border: 2px solid #353535;
-    font-weight: 400;
-    font-size: 12px;
-    color: #FFF;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 0;
-    padding: 9px 14px;
-    -webkit-appearance: none;    
-    -webkit-border-radius: 0;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;   
-}
-.action.primary:hover {
-    background: #fff;
-    border: 2px solid #231f20;
-    font-weight: 400;
-    font-size: 12px;
-    color: #231f20;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 0;
-    padding: 9px 14px;
-    -webkit-appearance: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-}
-.product-item .price-box .price {
-    font-weight: 700;
-    white-space: nowrap;
-    font-size: 13px;
-    color: #000;
-    font-weight: 700;
-    letter-spacing: 0;
-}
-.page-products .products-grid .product-item {
-     text-align: center;
-}
-.products-grid .product-item-info:hover, .products-grid .product-item-info.active {
-     background: none;
-     box-shadow: none;
-     border: none;
-     margin: 0px;
-     padding: 0px;
-     position: relative;
-     z-index: 2; 
-}
-.page-products .product-item-actions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.pro-options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 25px;
-}
-.pro-options .swatch-attribute-options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.filter-options-title {
-    background: none;
-    border-bottom: 1px dotted #d0d0d0;
-    color: inherit;
-    font-size: 12px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    padding: 0;
-    height: 30px;
-    line-height: 30px;
-    display: block;
-}
-.filter-options-title:after {
-    top: 2px;
+.w3ls_logo_products_left1:nth-child(4) {
+    margin-left: 6em;
 }

@@ -1,0 +1,20 @@
+<?php
+	$url  = $this->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]);
+
+	$login_url = $block->getUrl('customer/account/login', array('referer' => base64_encode($url)));
+	$register_url = $block->getUrl('customer/account/create', array('referer' => base64_encode($url)));
+?>
+
+<ul>
+	<li class="dropdown profile_details_drop open">
+		<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-user"></i><span class="caret"></span></a>
+	<div class="mega-dropdown-menu">
+		<div class="w3ls_vegetables">
+			<ul class="dropdown-menu drp-mnu" style="display: none;">
+				<li><a href="<?php echo $login_url; ?>">Login</a></li>
+				<li><a href="<?php echo $register_url; ?>">Sign Up</a></li>
+			</ul>
+		</div>
+	</div>
+	</li>	
+</ul>
